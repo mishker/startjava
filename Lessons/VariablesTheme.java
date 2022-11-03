@@ -121,7 +121,7 @@ public class VariablesTheme {
         System.out.println(num / 10 % 10 + " десятков");
         System.out.println(num % 10 + " единиц");
 
-        System.out.println("\n8. Вывод в консоль ASCII-арт Дюка");
+        System.out.println("\n8. Вывод в консоль ASCII-арт Дюка\n");
         char v1 = '/';
         char v2 = '_';
         char v3 = '(';
@@ -133,7 +133,7 @@ public class VariablesTheme {
         System.out.println("  " + v1 + "      " + v5 + "  ");
         System.out.println(" " + v1 + v2 + v2 + v2 + v2 + v1 + v5 + v2 + v2 + v5 + ' ');
 
-        System.out.println("\n9. Вывод произведения и суммы цифр числа");
+        System.out.println("\n9. Вывод произведения и суммы цифр числа\n");
         int c = 345;
         int hundreds = c / 100;
         int tens = c / 10 % 10;
