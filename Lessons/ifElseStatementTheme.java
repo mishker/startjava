@@ -56,6 +56,8 @@ public class ifElseStatementTheme {
         } else {
             System.out.println("Число нечётное");
         }
+        if (num % 2!=0) { 
+            System.out.println("Число");}
     }
 }
 }
