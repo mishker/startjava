@@ -27,30 +27,25 @@ public class ifElseStatementTheme {
         } else if (firstLetter == 'I') {
             System.out.println("Вас зовут Игорь");
         } else {
-            System.out.println("Введите своё имя");
+            System.out.println("Вас зовут не Михаил и не Игорь");
         }
 
         System.out.println("\n2. Поиск max и min числа\n");
         int num1 = 25;
         int num2 = 50;
-        int max,min;
         if (num2 > num1) {
-            max = num2;
-            min = num1;
-            System.out.println("Максимальное число: " + max);
-            System.out.println("Минимальное число: " + min);
+            System.out.println("max:" + num2 + '\t' + "min:" + num1);
         } else if (num1 > num2) {
-            max = num1;
-            min = num2;
-            System.out.println("Максимальное число: " + max);
-            System.out.println("Минимальное число: " + min);
+            System.out.println("max: " + num1 + '\t' + "min" + num2);
+        } else {
+            System.out.println("Числа равны");
         }
 
         System.out.println("\n3. Работа с числом\n");
         int num = 56;
         if (num == 0) {
             System.out.println("Число является 0");
-        } else if (num!=0) {
+        } else {
         if (num % 2 == 0) {
             System.out.println("Число чётное");
         } else {
@@ -96,25 +91,23 @@ public class ifElseStatementTheme {
 
         System.out.println("\n6. Определение суммы вклада и начисленных банком %\n");
         int contribution = 300000;
+        int contributionPercent;
         System.out.println("Сумма вклада = " + contribution + " рублей");
         if (contribution < 100000) {
             int sumPercent1 = 5;
-            int contributionPercent1 = (int) ((contribution * sumPercent1) / 100);
-            int totalContribution1 = contribution + contributionPercent1;
+            contributionPercent = (int) ((contribution * sumPercent1) / 100);
             System.out.println("Начисленный процент = " + sumPercent1 + "%");
-            System.out.println("Итоговая сумма = " + totalContribution1 + " рублей");
+            System.out.println("Итоговая сумма = " + (contribution + contributionPercent) + " рублей");
         } else if (100000 <= contribution && contribution <= 300000) {
             int sumPercent2 = 7;
-            int contributionPercent2 = (int) ((contribution * sumPercent2) / 100);
-            int totalContribution2 = contribution + contributionPercent2;
+            contributionPercent = (int) ((contribution * sumPercent2) / 100);
             System.out.println("Начисленный процент = " + sumPercent2 + "%");
-            System.out.println("Итоговая сумма = " + totalContribution2 + " рублей");
+            System.out.println("Итоговая сумма = " + (contribution + contributionPercent) + " рублей");
         } else if (contribution > 300000) { 
             int sumPercent3 = 10;
-            int contributionPercent3 = (int) ((contribution * sumPercent3) / 100);
-            int totalContribution3 = contribution + contributionPercent3;
+            contributionPercent = (int) ((contribution * sumPercent3) / 100);
             System.out.println("Начисленный процент = " + sumPercent3 + "%");
-            System.out.println("Итоговая сумма = " + totalContribution3 + " рублей");
+            System.out.println("Итоговая сумма = " + (contribution + contributionPercent) + " рублей");
         }
 
         System.out.println("\n7. Определение оценки по предметам\n");
@@ -172,6 +165,7 @@ public class ifElseStatementTheme {
         System.out.print(" 100(" + requiredBanknote100 + ")");
         System.out.print(" 10(" + requiredBanknote10 + ")");
         System.out.print(" 1(" + requiredBanknote1 + ")");
-        System.out.println("\nПосчитанная исходная сумма: " + ((100 * requiredBanknote100) + (10 * requiredBanknote10) + (requiredBanknote1)));
+        System.out.println("\nПосчитанная исходная сумма: " + 
+            ((100 * requiredBanknote100) + (10 * requiredBanknote10) + (requiredBanknote1)));
 }
 }
