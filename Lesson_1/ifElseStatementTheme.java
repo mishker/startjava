@@ -162,9 +162,9 @@ public class ifElseStatementTheme {
             requiredBanknote10 = maxBanknote10;
         }
         System.out.print("Требуемое количество банкнот: ");
-        System.out.print(" 100(" + requiredBanknote100 + ")");
-        System.out.print(" 10(" + requiredBanknote10 + ")");
-        System.out.print(" 1(" + requiredBanknote1 + ")");
+        System.out.print(" 100(" + requiredBanknote100 + ")" +
+            '\t' + "10(" + requiredBanknote10 + ")" + 
+            '\t' + "1(" + requiredBanknote1 + ")");
         System.out.println("\nПосчитанная исходная сумма: " + 
             ((100 * requiredBanknote100) + (10 * requiredBanknote10) + (requiredBanknote1)));
 }
