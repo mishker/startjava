@@ -35,7 +35,7 @@ public class VariablesTheme {
         System.out.println("J" + "  " + "J" + "  " + "a" + "a" + "a" + "a" + "a" + "  "  + "V" + " " + "V" + "  " + "a" + "a" + "a" + "a" + "a");
         System.out.println(" " + "J" + "J" + "  " + "a" + "     " + "a" + "  " + "V" + "  " + "a" + "     " + "a");
 
-         System.out.println("\n4. Отображение min и max значений числовых типов данных\n");
+        System.out.println("\n4. Отображение min и max значений числовых типов данных\n");
         byte maxByte = 127;
         short maxShort = 32767;
         int maxInt = 2147483647;
