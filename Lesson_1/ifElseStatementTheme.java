@@ -63,55 +63,61 @@ public class ifElseStatementTheme {
         }
     }
 
-    System.out.println("\n4. Поиск одинаковых цифр в числах\n");
-    int num3 = 526;
-    int num4 = 126;
-    int hundredsNum3 = num3 / 100;
-    int tensNum3 = num3 / 10 % 10;
-    int onesNum3 = num3 % 10;
-    int hundredsNum4 = num4 / 100;
-    int tensNum4 = num4 / 10 % 10;
-    int onesNum4 = num4 % 10;
-    if (hundredsNum3 == hundredsNum4) {
-        System.out.println("Найдены одниаковые цифры в 1 разряде: " + hundredsNum3 + " = " + hundredsNum4);
-    }
-    if (tensNum3 == tensNum4) {
-        System.out.println("Найдены одинаковые цифры во 2 разряде: " + tensNum3 + " = " + tensNum4);
-    }
-    if (onesNum3 == onesNum4) {
-        System.out.println("Найдены одинаковые цифры в 3 разряде: " + onesNum3 + " = " + onesNum4);
-    }
+        System.out.println("\n4. Поиск одинаковых цифр в числах\n");
+        int num3 = 526;
+        int num4 = 126;
+        int hundredsNum3 = num3 / 100;
+        int tensNum3 = num3 / 10 % 10;
+        int onesNum3 = num3 % 10;
+        int hundredsNum4 = num4 / 100;
+        int tensNum4 = num4 / 10 % 10;
+        int onesNum4 = num4 % 10;
+        if (hundredsNum3 == hundredsNum4) {
+            System.out.println("Найдены одниаковые цифры в 1 разряде: " + hundredsNum3 + " = " + hundredsNum4);
+        }
+        if (tensNum3 == tensNum4) {
+            System.out.println("Найдены одинаковые цифры во 2 разряде: " + tensNum3 + " = " + tensNum4);
+        }
+        if (onesNum3 == onesNum4) {
+            System.out.println("Найдены одинаковые цифры в 3 разряде: " + onesNum3 + " = " + onesNum4);
+        }
 
-    System.out.println("\n5. Определение буквы, числа или символа по их коду\n");
-    char somechar = '\u0057';
-    if (somechar >= 'a' && somechar <= 'z' || somechar >= 'A' && somechar <= 'Z' || somechar >= '0' && somechar <= '9') {
-        System.out.println("Большая буква: " + somechar);
-    }
+        System.out.println("\n5. Определение буквы, числа или символа по их коду\n");
+        char somechar = '\u0057';
+        if (somechar >= 'a' && somechar <= 'z') {
+            System.out.println("Маленькая буква: " + somechar);
+        } else if (somechar >= 'A' && somechar <= 'Z') {
+            System.out.println("Большая буква: " + somechar);
+        } else if (somechar >= 0 && somechar <= 9) {
+            System.out.println("Число: " + somechar);
+        } else {
+            System.out.println("Не буква и не число");
+        }
 
-    System.out.println("\n6. Определение суммы вклада и начисленных банком %\n");
-    int contribution = 300000;
-    System.out.println("Сумма вклада = " + contribution + " рублей");
-    if (contribution < 100000) {
-        int sumPercent1 = 5;
-        int contributionPercent1 = (int) ((contribution * sumPercent1) / 100);
-        int totalContribution1 = contribution + contributionPercent1;
-        System.out.println("Начисленный процент = " + sumPercent1 + "%");
-        System.out.println("Итоговая сумма = " + totalContribution1 + " рублей");
-    } else if (100000 <= contribution && contribution <= 300000) {
-        int sumPercent2 = 7;
-        int contributionPercent2 = (int) ((contribution * sumPercent2) / 100);
-        int totalContribution2 = contribution + contributionPercent2;
-        System.out.println("Начисленный процент = " + sumPercent2 + "%");
-        System.out.println("Итоговая сумма = " + totalContribution2 + " рублей");
-    } else if (contribution > 300000) { 
-        int sumPercent3 = 10;
-        int contributionPercent3 = (int) ((contribution * sumPercent3) / 100);
-        int totalContribution3 = contribution + contributionPercent3;
-        System.out.println("Начисленный процент = " + sumPercent3 + "%");
-        System.out.println("Итоговая сумма = " + totalContribution3 + " рублей");
-    }
+        System.out.println("\n6. Определение суммы вклада и начисленных банком %\n");
+        int contribution = 300000;
+        System.out.println("Сумма вклада = " + contribution + " рублей");
+        if (contribution < 100000) {
+            int sumPercent1 = 5;
+            int contributionPercent1 = (int) ((contribution * sumPercent1) / 100);
+            int totalContribution1 = contribution + contributionPercent1;
+            System.out.println("Начисленный процент = " + sumPercent1 + "%");
+            System.out.println("Итоговая сумма = " + totalContribution1 + " рублей");
+        } else if (100000 <= contribution && contribution <= 300000) {
+            int sumPercent2 = 7;
+            int contributionPercent2 = (int) ((contribution * sumPercent2) / 100);
+            int totalContribution2 = contribution + contributionPercent2;
+            System.out.println("Начисленный процент = " + sumPercent2 + "%");
+            System.out.println("Итоговая сумма = " + totalContribution2 + " рублей");
+        } else if (contribution > 300000) { 
+            int sumPercent3 = 10;
+            int contributionPercent3 = (int) ((contribution * sumPercent3) / 100);
+            int totalContribution3 = contribution + contributionPercent3;
+            System.out.println("Начисленный процент = " + sumPercent3 + "%");
+            System.out.println("Итоговая сумма = " + totalContribution3 + " рублей");
+        }
 
-      System.out.println("\n7. Определение оценки по предметам");
+        System.out.println("\n7. Определение оценки по предметам\n");
         int percentHistory = 59;
         int percentProgramming = 91;
         int scoreHistory;
@@ -137,19 +143,35 @@ public class ifElseStatementTheme {
         System.out.println(scoreHistory + " - История");
         System.out.println(scoreProgramming + " - Программирование");
         System.out.println("Средний балл оценок по предметам = " + ((scoreHistory + scoreProgramming) /2));
-    
+        System.out.println("Средний % по предметам = " + ((percentHistory + percentProgramming) / 2));
 
-    System.out.println("\n8. Расчёт прибыли");
-    int costGoods = 9000;
-    int salesPerMonth = 13000;
-    int rentPricePerMonth = 5000;
-    int expensesPerMonth = costGoods + rentPricePerMonth;
-    int expensesPerYear = expensesPerMonth * 12;
-    int salesPerYear = salesPerMonth * 12;
-    int profitPerYear = salesPerYear - expensesPerYear;
-    System.out.println("Прибыль за год: " + profitPerYear + " рублей");
+        System.out.println("\n8. Расчёт прибыли\n");
+        int costGoods = 9000;
+        int salesPerMonth = 13000;
+        int rentPricePerMonth = 5000;
+        int profitPerYear = (13000 - 5000 - 9000) * 12;
+        if (profitPerYear > 0) {
+            System.out.println("Прибыль за год: +" + profitPerYear + " рублей\n");
+        } else {
+            System.out.println("Прибыль за год: " + profitPerYear + " рублей\n");
+        }
 
-    System.out.println("\n9. Подсчёт количества банкнот");
-    
+        System.out.println("\n9. Подсчёт количества банкнот\n");
+        int sum = 567;
+        int maxBanknote100 = 10;
+        int maxBanknote10 = 5;
+        int maxBanknote1 = 50;
+        int requiredBanknote100 = sum / 100;
+        int requiredBanknote10 = sum / 10 % 10;
+        int requiredBanknote1 = sum % 10;
+        if (requiredBanknote10 > maxBanknote10) {
+            requiredBanknote1 += (requiredBanknote10 - maxBanknote10) * 10;
+            requiredBanknote10 = maxBanknote10;
+        }
+        System.out.print("Требуемое количество банкнот: ");
+        System.out.print(" 100(" + requiredBanknote100 + ")");
+        System.out.print(" 10(" + requiredBanknote10 + ")");
+        System.out.print(" 1(" + requiredBanknote1 + ")");
+        System.out.println("\nПосчитанная исходная сумма: " + ((100 * requiredBanknote100) + (10 * requiredBanknote10) + (requiredBanknote1)));
 }
 }
